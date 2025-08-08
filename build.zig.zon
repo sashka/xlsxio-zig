@@ -1,0 +1,22 @@
+.{
+    .name = .xlsxio,
+    .version = "0.0.0",
+    .paths = .{
+        "include",
+        "lib",
+        "src",
+        "build.zig",
+        "build.zig.zon",
+    },
+    .dependencies = .{
+        .expat = .{
+            .url = "git+https://github.com/allyourcodebase/libexpat.git#2.7.1",
+            .hash = "libexpat-2.7.1-y_akI1M7AAA1huPJVegH4dosRVA-lMRgzMuX9vC7aB1s",
+        },
+        .libzip = .{
+            .url = "git+https://github.com/allyourcodebase/libzip.git#1.11.2",
+            .hash = "libzip-1.11.2-WX_L8Ck4AADFFAXJ5QvIrrZ9osNgIQJWPgih_6rg8K97",
+        },
+    },
+    .fingerprint = 0x402b2efec66e6e02,
+}
