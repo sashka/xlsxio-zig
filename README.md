@@ -29,20 +29,12 @@ pub fn main() !void {
 
 ## Install
 
-I use this package as part of a project source tree like "/pkg/xlsxio", so my `build.zig.zon` contains these dependencies:
+I use this package as part of a project source tree like "/pkg/xlsxio", so my `build.zig.zon` looks like this:
 
 ```zig
 .dependencies = .{
     .xlsxio = .{
         .path = "pkg/xlsxio",
-    },
-    .expat = .{
-        .url = "git+https://github.com/allyourcodebase/libexpat.git#2.7.1",
-        .hash = "libexpat-2.7.1-y_akI1M7AAA1huPJVegH4dosRVA-lMRgzMuX9vC7aB1s",
-    },
-    .libzip = .{
-        .url = "git+https://github.com/allyourcodebase/libzip.git#1.11.2",
-        .hash = "libzip-1.11.2-WX_L8Ck4AADFFAXJ5QvIrrZ9osNgIQJWPgih_6rg8K97",
     },
 },
 ```
